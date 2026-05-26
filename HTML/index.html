@@ -9,6 +9,13 @@
     <title>Thiago Dias | Backend Developer</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="icon" type="image/x-icon" href="../IMG/letra-d.png">
+
+
+    <!-- biblioteca para scroll suave -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+
 </head>
 
 <body>
@@ -21,7 +28,7 @@
 
         <nav class="nav-links">
             <a class="nav-link" href="../HTML/index.html" target="_blank" rel="noopener noreferrer">Home</a>
-            <a class="nav-link" href="../HTML/projetos.html" target="_blank" rel="noopener noreferrer">Projetos</a>
+            <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="../HTML/contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
         </nav>
 
@@ -33,7 +40,7 @@
             <h1 class="titulo">Thiago Dias</h1>
             <p class="subtitulo">Backend Developer | Estudante de Engenharia de Software</p>
             <!-- <img class="foto" src="../IMG/thiago.JPEG" alt="Foto de perfil de Thiago Dias"> -->
-            <a class="btn-primary" href="#projetos" target="_blank" rel="noopener noreferrer">Ver Projetos</a>
+            <a class="btn-primary" href="#projetos">Ver Projetos</a>
             <a class="btn-secondary" href="https://github.com/teagozz" target="_blank"
                 rel="noopener noreferrer">GitHub</a>
         </section>
@@ -85,7 +92,7 @@
             </div>
         </section>
 
-        <section class="projetos-container">
+        <section class="projetos-container" id="projetos">
             <h2 class="titulo">Projetos</h2>
             <div class="projeto">
                 <h3 class="subtitulo">API de Gerenciamento de Tarefas</h3>
@@ -128,7 +135,7 @@
                     <br><br>
                 </p>
             </div>
-            
+
         </section>
 
     </main>
