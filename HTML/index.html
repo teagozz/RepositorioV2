@@ -19,10 +19,13 @@
     <script>
         const { animate } = anime;
     </script>
+
+    <!-- biblioteca para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="logo">
             <h3 class="dias">
@@ -33,7 +36,7 @@
         <nav class="nav-links">
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#projetos">Projetos</a>
-            <a class="nav-link" href="../HTML/contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
+            <a class="nav-link" href="#contato">Contato</a>
         </nav>
 
     </header>
@@ -43,7 +46,7 @@
         <section class="hero" id="home">
             <div class="div-hero">
 
-                <div class="hero-titulo">                    
+                <div class="hero-titulo">
                     <h3 class="text-thiago">THIAGO DIAS</h3>
                 </div>
 
@@ -155,18 +158,21 @@
     </main>
 
     <footer class="footer">
-        <section class="contato-container">
+        <section class="contato-container" id="contato">
             <h2 class="titulo">Contato</h2>
             <p class="contato-texto">Sinta-se livre para entrar em contato comigo através de qualquer link abaixo:</p>
             <div class="sociais-footer">
                 <a class="sociais" id="email" href="mailto:thiago2020dias@gmail.com" target="_blank"
-                    rel="noopener noreferrer"> E-mail</a>
+                    rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i>E-mail</a>
+
                 <a class="sociais" id="linkedin" href="https://www.linkedin.com/in/thiagodjardim/" target="_blank"
-                    rel="noopener noreferrer">LinkedIn</a>
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
                 <a class="sociais" id="instagram" href="https://www.instagram.com/diasjthiago/" target="_blank"
-                    rel="noopener noreferrer">Instagram</a>
+                    rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i>Instagram</a>
+
                 <a class="sociais" id="github" href="https://github.com/teagozz" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
+                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
             </div>
         </section>
 

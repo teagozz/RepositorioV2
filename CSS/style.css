@@ -3,9 +3,9 @@
 :root {
   color-scheme: light dark;
 
-  --bg-body: #5C5D5B;
-  --bg-header: #3A3B39;
-  --text-muted: #F5F5F7;
+  --bg-body: #5c5d5b;
+  --bg-header: #3a3b39;
+  --text-muted: #f5f5f7;
   --color-accent: #00e5ff;
   --color-accent-hover: #00e5ff;
   --color-accent-sb: #00e5ff;
@@ -24,10 +24,9 @@
 body {
   margin-top: 3%;
   background-color: var(--bg-body);
-  background-image: url('../IMG/bg-image.jpg');
+  background-image: url("../IMG/bg-image.jpg");
   background-size: cover;
   background-position: center;
-  
 }
 
 h3,
@@ -51,7 +50,7 @@ a:visited {
   top: 10px;
   left: 20%;
   right: 20%;
-  margin: 0;
+  margin: auto;
   padding: 10px 30px 10px 10px;
   display: flex;
   align-items: center;
@@ -117,18 +116,20 @@ a:visited {
   width: 100%;
   text-align: left;
 }
+
 .hero-titulo {
   margin-bottom: 10px;
-  font-size: clamp(2.5rem,5.5vw,4.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -2px;
   text-transform: uppercase;
 }
+
 .hero-subtitulo {
   font-size: 1.5em;
   margin-bottom: 20px;
-  font-size: clamp(1.rem,3vw,2.5rem);
+  font-size: clamp(1rem, 3vw, 2.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: var(--color-accent-sb);
@@ -162,16 +163,38 @@ a:visited {
   color: var(--color-accent);
   transition: color 0.3s ease;
 }
+
 .nav-link:hover,
 .dias:hover {
   color: var(--color-accent-hover);
 }
 
+.sociais-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .sociais {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
   color: var(--color-accent);
   transition: color 0.3s ease;
 }
+
+.sociais:hover {
+  transform: translateY(-2px);
+  background: #333;
+}
+
+.sociais i {
+  font-size: 1.2rem;
+}
+
 .sociais:visited {
   color: var(--color-accent);
 }
@@ -181,6 +204,7 @@ a:visited {
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
+
 .strong:hover {
   color: var(--color-accent-hover);
 }
