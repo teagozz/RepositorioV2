@@ -67,7 +67,6 @@ a:visited {
 
 /* ====================== CLASSES ====================== */
 
-/* --- Layout e Estrutura --- */
 .header {
   position: fixed;
   top: 10px;
@@ -94,12 +93,10 @@ a:visited {
   gap: 20px;
 }
 
-/* --- Tipografia e Textos --- */
 .titulo {
   margin: 0 0 10px 0;
   color: var(--text-muted);
   text-transform: uppercase;
-  /* text-align: left; */
 }
 
 .apresentacao-texto {
@@ -167,7 +164,6 @@ a:visited {
   letter-spacing: 0.06em;
 }
 
-/* --- Imagens --- */
 .hero-foto {
   width: 45%;
   height: 45%;
@@ -175,7 +171,6 @@ a:visited {
   border-radius: 60%;
 }
 
-/* --- Navegação e Links --- */
 .nav-links {
   display: flex;
   align-items: center;
@@ -238,6 +233,5 @@ a:visited {
 .strong:hover {
   color: var(--color-accent-hover);
 }
-
 
 /* ====================== IDS ====================== */
