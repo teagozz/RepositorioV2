@@ -3,12 +3,12 @@
 :root {
   color-scheme: light dark;
 
-  /* Paleta de Cores (Variáveis) */
   --bg-body: #164c62;
   --bg-header: #431616;
   --text-muted: #99aebb;
   --color-accent: #c4770b;
   --color-accent-hover: #f0a500;
+  --color-accent-sb: #431616;
 }
 
 * {
@@ -36,7 +36,6 @@ a {
   text-decoration: none;
 }
 a:visited {
-  /* Mantém a cor original dos links visitados */
   color: var(--color-accent);
 }
 
@@ -50,20 +49,18 @@ a:visited {
   right: 20%;
   margin: 0;
   padding: 10px 30px 10px 10px;
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  
   background-color: var(--bg-header);
   border-radius: 50px;
 }
 
 .principal {
-  margin: 2% 20% 0 20%;
+  margin: 2% 15% 0 15%;
   padding: 0;
-  
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -78,15 +75,6 @@ a:visited {
   /* text-align: left; */
 }
 
-.hero{
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-}
-
 .apresentacao-texto {
   display: block;
   width: 100%;
@@ -95,14 +83,57 @@ a:visited {
   text-align: left;
 }
 
+.contato-container {
+  margin: 20px 15% 0 15%;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.footer {
+  margin: 20px 15% 0 15%;
+  padding: 10px;
+  border-radius: 50px;
+}
+
 .copy {
   padding: 10px;
   color: var(--text-muted);
   text-align: center;
 }
 
+.hero {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.div-hero {
+  width: 100%;
+  text-align: left;
+}
+.hero-titulo {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-size: clamp(2.5rem,5.5vw,4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+.hero-subtitulo {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-size: clamp(1.rem,3vw,2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-accent-sb);
+}
+
+
 /* --- Imagens --- */
-.foto {
+.hero-foto {
   width: 45%;
   height: 45%;
   border: 3px solid var(--color-accent);
