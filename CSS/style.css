@@ -3,12 +3,12 @@
 :root {
   color-scheme: light dark;
 
-  --bg-body: #164c62;
-  --bg-header: #431616;
-  --text-muted: #99aebb;
-  --color-accent: #c4770b;
-  --color-accent-hover: #f0a500;
-  --color-accent-sb: #431616;
+  --bg-body: #5C5D5B;
+  --bg-header: #3A3B39;
+  --text-muted: #F5F5F7;
+  --color-accent: #00e5ff;
+  --color-accent-hover: #00e5ff;
+  --color-accent-sb: #00e5ff;
 }
 
 * {
@@ -24,6 +24,10 @@
 body {
   margin-top: 3%;
   background-color: var(--bg-body);
+  background-image: url('../IMG/bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  
 }
 
 h3,
@@ -114,7 +118,6 @@ a:visited {
   text-align: left;
 }
 .hero-titulo {
-  font-size: 2.5em;
   margin-bottom: 10px;
   font-size: clamp(2.5rem,5.5vw,4.5rem);
   font-weight: 800;
@@ -131,6 +134,11 @@ a:visited {
   color: var(--color-accent-sb);
 }
 
+#animation .text-thiago {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+}
 
 /* --- Imagens --- */
 .hero-foto {
