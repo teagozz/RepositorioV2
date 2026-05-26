@@ -230,11 +230,14 @@ a:visited {
 /* --- Utilitários --- */
 .strong {
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .strong:hover {
   color: var(--color-accent-hover);
 }
+
 
 /* ====================== IDS ====================== */
