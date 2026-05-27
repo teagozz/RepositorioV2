@@ -16,3 +16,6 @@ animate(chars, {
   loopDelay: 1000,
   loop: true
 }); 
+
+
+

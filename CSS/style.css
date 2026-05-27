@@ -225,7 +225,6 @@ a:visited {
   color: var(--color-accent);
 }
 
-/* --- Utilitários --- */
 .strong {
   text-transform: uppercase;
   transition:
