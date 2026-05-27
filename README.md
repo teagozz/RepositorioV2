@@ -13,18 +13,17 @@ Este repositório contém um projeto web simples com página(s) estática(s) em 
 ## Estrutura de arquivos
 
 ```
-├── 📁 CSS
+├── 📁 css
 │   └── 🎨 style.css
-├── 📁 HTML
-│   └── 🌐 index.html
-├── 📁 IMG
+├── 📁 img
 │   ├── 🖼️ bg-image-dark.jpg
 │   ├── 🖼️ bg-image-light.jpg
 │   ├── 🖼️ letra-d.png
 │   └── 🖼️ thiago.JPEG
-├── 📁 JAVASCRIPT
+├── 📁 javascript
 │   └── 📄 script.js
 ├── 📝 README.md
+├── 🌐 index.html
 ├── ⚙️ package-lock.json
 └── ⚙️ package.json
 ```
