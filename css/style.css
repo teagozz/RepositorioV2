@@ -101,6 +101,11 @@ a:visited {
   border-radius: 50px;
 }
 
+.logo-link{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* ====================== LAYOUT PRINCIPAL ====================== */
 
 .principal {
