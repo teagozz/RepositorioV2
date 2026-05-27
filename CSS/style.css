@@ -50,7 +50,7 @@
 body {
   margin-top: 3%;
   background-color: var(--bg-body);
-  background-image: url("../IMG/bg-image.jpg");
+  background-image: url("../IMG/bg-image-dark.jpg");
   background-size: cover;
   background-position: center;
 }
