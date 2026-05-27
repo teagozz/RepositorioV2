@@ -1,4 +1,4 @@
-# RepositórioV2
+# Repositório
 
 Este repositório contém um projeto web simples com página(s) estática(s) em HTML, estilos em CSS e comportamento em JavaScript.
 
