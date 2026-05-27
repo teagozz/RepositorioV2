@@ -71,10 +71,11 @@ body {
   background-position: center;
 }
 
-h3, 
+h3,
 p {
   margin: 2%;
   color: var(--text-muted);
+  ;
 }
 
 a {
@@ -173,7 +174,7 @@ a:visited {
 }
 
 .skill-card:hover {
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-hover);
   background: rgba(0, 229, 255, 0.06);
   transform: translateY(-4px);
 }
@@ -250,7 +251,6 @@ a:visited {
   padding: 30px;
 }
 
-
 .experiencia {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -321,37 +321,93 @@ a:visited {
 
 .div-hero {
   width: 100%;
+  max-width: 600px;
   text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-label {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  opacity: 0.75;
+  margin: 0 0 12px 0;
 }
 
 .hero-titulo {
-  margin-bottom: 10px;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  margin: 0 0 16px 0;
+}
+
+.text-thiago {
+  font-size: clamp(3rem, 7vw, 6rem);
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -2px;
+  line-height: 1.0;
+  letter-spacing: -3px;
   text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
 }
 
 .hero-subtitulo {
-  margin-bottom: 20px;
-  font-size: clamp(1rem, 3vw, 2.5rem);
+  display: none; /* substituído pelo hero-label */
+}
+
+.hero-descricao {
+  margin: 0 0 32px 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 50px;
   font-weight: 600;
-  line-height: 1.2;
-  color: var(--color-accent-sb);
+  font-size: 0.95rem;
+  text-decoration: none;
+  background: transparent;
+  color: var(--text-muted);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
 }
 
-#animation .text-thiago {
-  font-size: 1.5rem;
-  color: currentColor;
-  letter-spacing: 0.06em;
+.btn-primary:hover {
+  background: var(--text-muted);
+  color: #000;
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
 }
 
-.hero-foto {
-  width: 45%;
-  height: 45%;
-  border: 3px solid var(--color-accent);
-  border-radius: 60%;
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
 }
 
 /* ====================== NAV ====================== */
