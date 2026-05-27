@@ -64,18 +64,16 @@
 /* ====================== BODY ====================== */
 
 body {
-  margin-top: 3%;
+  margin-top: 4%;
   background-color: var(--bg-body);
   background-image: url("../img/bg-image-dark.jpg");
   background-size: cover;
   background-position: center;
 }
 
-h3,
 p {
   margin: 2%;
   color: var(--text-muted);
-  ;
 }
 
 a {
@@ -424,6 +422,7 @@ a:visited {
   text-decoration: none;
   color: var(--color-accent);
   transition: color 0.3s ease;
+  
 }
 
 .nav-link:hover,
