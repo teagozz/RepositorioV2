@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="icon" type="image/x-icon" href="../IMG/letra-d.png">
 
-    <!-- biblioteca para scroll suave -->
+    <!-- LENIS para scroll suave -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
     <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
     <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
@@ -20,8 +20,11 @@
         const { animate } = anime;
     </script>
 
-    <!-- biblioteca para ícones -->
+    <!-- Font Awesome (ícones gerais) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Devicons (ícones coloridos de tecnologia) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -38,9 +41,9 @@
 
         <nav class="nav-links">
             <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#skills">Skills</a>
             <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="#contato">Contato</a>
-
         </nav>
 
     </header>
@@ -54,19 +57,17 @@
                     <h3 class="text-thiago">THIAGO DIAS</h3>
                 </div>
 
-                <!-- <h1 class="hero-titulo">Thiago Dias</h1> -->
                 <p class="hero-subtitulo">Dev BackEnd Júnior</p>
                 <p class="hero-descricao">Estudante de Engenharia de Software, apaixonado por desenvolvimento backend
                     <br> e tecnologias que transformam ideias em soluções eficientes.
                 </p>
-                <!-- <img class="hero-foto" src="../IMG/thiago.JPEG" alt="Foto de perfil de Thiago Dias"> -->
                 <a class="btn-primary" href="#projetos">Projetos</a>
                 <a class="btn-secondary" href="https://github.com/teagozz" target="_blank"
                     rel="noopener noreferrer">GitHub</a>
             </div>
         </section>
 
-        <section class="apresentacao-container">
+        <section class="apresentacao-container glass">
             <h2 class="titulo">Sobre mim</h2>
             <p class="apresentacao-texto">
                 Olá! Me chamo <strong class="strong">Thiago Dias</strong> e sou estudante de
@@ -84,36 +85,66 @@
                 eficientes que unam tecnologia, organização e experiência do usuário, buscando sempre
                 aprimorar minhas habilidades e contribuir para projetos desafiadores na área de
                 desenvolvimento de software.
-                <br>
-                <!-- <br>
-                Quando não estou na frente do computador, gosto de caminhar ao ar livre, descobrir novas
-                músicas e passar tempo com minha família e amigos. Acredito que o equilíbrio entre trabalho,
-                estudo e lazer é algo essencial para manter a criatividade e a motivação em alta! -->
-
             </p>
         </section>
 
-        <section class="skills-container">
+        <section class="skills-container glass" id="skills">
             <h2 class="titulo">O que uso</h2>
-            <div class="linguagens">
-                <h3 class="subtitulo">Programação</h3>
-                <span class="linguagem">Java</span>
-                <span class="linguagem">JavaScript</span>
-                <span class="linguagem">HTML & CSS</span>
-                <span class="linguagem">PostgreSQL</span>
-                <span class="linguagem">Spring Boot</span>
-                <span class="linguagem">APIs REST</span>
+
+            <div class="skills-group">
+                <h3 class="sb-skills">Desenvolvimento</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-java-plain colored"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-spring-plain colored"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-plug" style="color: var(--color-accent);"></i>
+                        <span>APIs REST</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="ferramentas">
-                <h3 class="subtitulo">Ferramentas</h3>
-                <span class="ferramenta">Git</span>
-                <span class="ferramenta">Github</span>
-                <span class="ferramenta">Insomnia</span>
+            <div class="skills-group">
+                <h3 class="sb-skills">Ferramentas</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-github-original" style="color: var(--text-muted);"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-moon" style="color: #6758f3;"></i>
+                        <span>Insomnia</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="projetos-container" id="projetos">
+        <section class="projetos-container glass" id="projetos">
             <h2 class="titulo">Projetos</h2>
             <div class="projeto">
                 <h3 class="subtitulo">API de Gerenciamento de Tarefas</h3>
@@ -137,7 +168,6 @@
                     O projeto usará <strong class="strong">JavaScript</strong>, <strong class="strong">HTML</strong>,
                     <strong class="strong">CSS</strong>
                     e integração com APIs de IA para fornecer sugestões personalizadas de receitas. <br>
-
                     <a href="https://github.com/teagozz" target="_blank" rel="noopener noreferrer">Repositório</a>
                     <br><br>
                 </p>
@@ -160,18 +190,17 @@
 
         </section>
 
-        <section class="experiencias">
-            <h2 class="titulo">Experiências</h2>
+        <section class="experiencias glass">
+            <h2 class="titulo">Experiências Profissionais</h2>
 
             <div class="experiencia">
                 <h3 class="subtitulo">
                     Técnico de TI - Hospital e Maternidade Vital Brazil | Outubro de 2025 - Atualmente
                 </h3>
-
                 <p class="descricao">
                     Responsável pelo suporte técnico aos usuários, atendimento de chamados, suporte remoto e apoio à
-                    infraestrutura de TI em ambiente hospitalar. Atuação na implementação de sistemas, organização de
-                    processos internos, treinamentos operacionais e suporte a colaboradores, contribuindo para a
+                    infraestrutura de TI em ambiente hospitalar. <br>Atuação na implementação de sistemas, organização
+                    de processos internos, treinamentos operacionais e suporte a colaboradores, contribuindo para a
                     continuidade, eficiência e modernização dos serviços tecnológicos da instituição.
                 </p>
             </div>
@@ -182,11 +211,10 @@
                 <h3 class="subtitulo">
                     Operador de Sistemas - Edy Fashion | Fevereiro de 2022 - Abril de 2024
                 </h3>
-
                 <p class="descricao">
                     Responsável pelo controle de estoque via sistema SIG, lançamento de notas fiscais e boletos,
                     cadastro de produtos e clientes, além do acompanhamento da movimentação de mercadorias seguindo o
-                    padrão FIFO. Atuação voltada para organização operacional, controle de dados e eficiência nos
+                    padrão FIFO. <br> Atuação voltada para organização operacional, controle de dados e eficiência nos
                     processos administrativos e logísticos da empresa.
                 </p>
             </div>
@@ -196,7 +224,7 @@
 
     <footer class="footer">
         <section class="contato-container" id="contato">
-            <h2 class="titulo">Contato</h2>
+            <h2 class="titulo">Entre em Contato!</h2>
             <p class="contato-texto">Sinta-se livre para entrar em contato comigo através de qualquer link abaixo:</p>
             <div class="sociais-footer">
                 <a class="sociais" id="email" href="mailto:thiago2020dias@gmail.com" target="_blank"
@@ -210,7 +238,8 @@
             </div>
         </section>
 
-        <p class="copy">&copy; 2025 diasjthiago. Todos os direitos reservados.</p>
+        <p class="copy">&copy; 2025 <a href="https://github.com/teagozz" target="_blank"
+                rel="noopener noreferrer">diasjthiago</a>. Todos os direitos reservados.</p>
     </footer>
 
     <script type="module" src="../JAVASCRIPT/script.js"></script>
